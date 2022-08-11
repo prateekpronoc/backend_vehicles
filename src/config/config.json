@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username": "superadmin",
+    "password": "tech.hp!",
+    "database": "new_mobility",
+    "host": "139.59.57.10",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false,
+      "underscored": true
+    }
+  }
+}
