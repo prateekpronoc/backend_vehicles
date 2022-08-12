@@ -15,6 +15,8 @@ db.sequelize.sync()
   });
 
   require("./src/routes/vehicle.route")(app); 
+  require("./src/routes/catalogMaster.route")(app);
+  require("./src/routes/catalogValues.route")(app);
 // parse requests of content-type - application/json
 
 app.use(express.json());

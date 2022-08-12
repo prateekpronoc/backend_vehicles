@@ -1,5 +1,5 @@
 const db = require("../models");
-const Vehicle = db.vehicles;
+const CatalogMaster = db.catalog_masters;
 const Op = db.Sequelize.Op;
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
@@ -9,7 +9,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     const title = req.query.title;
     // var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
-    Vehicle.findAndCountAll({limit:10,offet:0,where:{}})
+    CatalogMaster.findAndCountAll({limit:10000,offet:0,where:{}})
       .then(data => {
         console.log(data);
         res.send(data);
